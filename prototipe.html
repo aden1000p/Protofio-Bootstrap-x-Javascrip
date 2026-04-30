@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f00f;
+        }
+
+        img {
+            max-width: 80%;
+            max-height: 80vh;
+            border-radius: 12px;
+            box-sizing: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <button id="kanan">kanan</button>
+        <img src="images/gambar1.png" alt="logo1" id="gambar">
+        <p id="teks">Ini gambar pertama</p>
+        <button id="kiri">kiri</button>
+    </div>
+
+    <script>
+        const data = [{
+                gambar: "images/gambar1.png",
+                teks: "ini gambar pertama."
+            },
+            {
+                gambar: "images/gambar2.png",
+                teks: "ini gambar kedua"
+            },
+            {
+                gambar: "images/gambar3.png",
+                teks: "ini gambar ketiga"
+            },
+            {
+                gambar: "images/gambar4.png",
+                teks: "ini gambar keempat"
+            }
+        ]
+
+        let index = 0;
+        const gambarEl = document.getElementById('gambar');
+        const teksEl = document.getElementById('teks');
+        const kiri = document.getElementById('kiri')
+        const kanan = document.getElementById('kanan');
+
+        function update() {
+            gambarEl.src = data[index].gambar;
+            teksEl.innerHTML = data[index].teks;
+        }
+
+        kiri.addEventListener('click', function (e) {
+            e.preventDefault()
+            index = (index + 1) % data.length
+            update()
+        })
+
+        kanan.addEventListener('click', function(e) {
+            e.preventDefault()
+            index = (index - 1 + data.length) % data.length;
+            update()
+        })
+    </script>
+</body>
+
+</html>

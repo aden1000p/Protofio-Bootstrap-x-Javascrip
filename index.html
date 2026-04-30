@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protofiot</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="navAnimation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid posit">
+                <a class="navbar-brand" href="#""><span class=" text-success">My Protofio</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link active" aria-current="page" href="#about"> about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">skils</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="color-gradient  p-5">
+        <div class="container vh-75">
+            <div class="geser">
+                <h1 class="font-same" id="home">1. Home</h1>
+            </div>
+            <div class="biodata">
+                <p class="font-same">Hallo semuannya perkenalkan nama saya fadly apriliansyah saya berasal dari
+                    sukabumi, saya lahir pada hari minggu tanggal 13 bulan april tahun 2008 kami disini ingin melihat
+                    protofio saya mungkin ini bisa membantu saya mendapatkan pekerjaan dan tau apa skill yang saya
+                    miliki dan juga untuk mengenal diri saya sendiri meski saya masih dasar tapi setidaknya ada banyak
+                    hal yang saya pelajari dan saya akan meningkatkan skill saya secara perlahan</p>
+                <div class="image ">
+                    <img src="images/WIN_20250310_13_41_01_Pro.jpg" alt="50">
+                </div>
+            </div>
+            <div class="lanjutkan-cerita d-flex ms-3">
+                <button onclick="ScrollView()" class="btn btn-primary">Lanjutkan ke bawah</button>
+                <input type="color" name="" id="textColor" class="mt-2 m-left rounded-2" value="#fff">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="services m-auto d-flex flex-wrap vh-100 p-3" id="BackgroundInput">
+            <h3 class="m-auto bg-primary w-100 text-center p-3 rounded shadow-lg" id="about">2.About</h3>
+            <div class="row p-lg-5">
+                <div class="col shadow-lg rounded p-2 d-flex flex-wrap">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5
+                                class="card-title card-title text-muted bg-info text-center p-3 rounded-3 text-uppercase">
+                                Tujuan</h5>
+                            <h6
+                                class="card-subtitle mb-3 text-body-secondary bg-primary p-3 text-center rounded text-dark">
+                                Tujuannya untuk</h6>
+                            <p class="card-text">
+                                <ul style="list-style-type: number;">
+                                    <li>Ingin mengenal diri saya sendiri</li>
+                                    <li>Ingin mempelajari hal yang baru</li>
+                                    <li>Ingin mendapatkan pengalaman terhadap pekerjaaan dan bisnis</li>
+                                    <li>Ingin menjadi kan pendidikan sebagai senjata bagi dunia</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ms-3 shadow-lg rounded p-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted bg-info text-center p-3 rounded-3 text-uppercase">maksud
+                            </h5>
+                            <h6
+                                class="card-subtitle mb-3 text-body-secondary bg-primary p-3 text-center rounded text-dark">
+                                maksudnya untuk</h6>
+                            <p class="card-text">
+                                <ul style="list-style-type: number;">
+                                    <li>saya membuat ini hanya untuk mengenal diri saya sendiri </li>
+                                    <li>Protofio ini akan menjadikan bahan masa depan nanti</li>
+                                    <li>sebagai bahan pengalaman </li>
+                                    <li>menjadikan projek evaluasi</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profil mt-5 ">
+        <div class="profil-title text-center bg-success p-3">
+            <h3 class="text-light fw-bold">3.Biodata</h3>
+            <h3 class="bg-primary text-light p-2 w-50 m-auto rounded">Fadly Apriliansyah</h3>
+        </div>
+
+        <div class="container">
+            <div class="row mt-3 m-auto d-flex flex-wrap">
+                <div class="col hover1">
+                    <div class="title">
+                        <h3 class="profil-title text-center bg-primary p-3 text-dark">Biodata</h3>
+                        <button onclick="showClick1()" class="btn btn-primary w-100">Tampilkan dan sembunyikan</button>
+                    </div>
+                    <div class="content" id="show1">
+                        <ul id="checkNumber" class="body">
+                            <li>Nama: Fadly apriliansyah</li>
+                            <li>Lahir: sukabumi 14 april 2008</li>
+                            <li>Alamat: Lampingsari</li>
+                            <li>Jenis kelamin: laki-laki</li>
+                            <li>Agama: islam</li>
+                            <li>Negara: indonesia</li>
+                            <li>Golongan darah: O</li>
+                            <li>Status: single</li>
+                            <div class="inputColor">
+                                <input type="color" id="InputTextColor1">
+                                <button onclick="Checklist()" class="btn btn-primary">*</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class="title">
+                            <h3 class="profil-title text-center bg-primary p-3 text-dark">Pendidikan sekolah</h3>
+                            <button onclick="showClick2()" class="btn btn-primary w-100">Tampilkan dan
+                                sembunyikan</button>
+                        </div>
+                        <div class="content" id="show2">
+                            <ul id="checkNumber" class="body2">
+                                <li>Sd : Sdn pasir malang (2014-2019)</li>
+                                <li>Smp/Mts: Mts al hidayah (2020 - 2023)</li>
+                                <li>Sma/Smk: smk al-madani (2023 - 2026)</li>
+                                <div class="inputColor">
+                                    <input type="color" id="InputTextColor2">
+                                    <button onclick="Checklist2()" class="btn btn-primary">*</button>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class="title">
+                            <h3 class="profil-title text-center bg-primary p-3 text-dark">Pengalaman</h3>
+                            <button onclick="showClick3()" class="btn btn-primary w-100">Tampilkan dan
+                                sembunyikan</button>
+                        </div>
+                        <div class="content" id="show3">
+                            <ul id="checkNumber" class="body3">
+                                <li>Pernah menjadi Anggota Komputer </li>
+                                <li>pernah juara 1 ketik cepat sekecamatan</li>
+                                <li>pernah aktif MPK, Pramuka, Inggris, dan komputer</li>
+                                <div class="inputColor">
+                                    <input type="color" id="InputTextColor3">
+                                    <button onclick="Checklist3()" class="btn btn-primary">*</button>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="skils mt-5">
+        <div class="skils-title bg-info p-3 text-center">
+            <h3 class="fs-1 text-light">3. Skils</h3>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="skilsShow">
+                    <h3 class="bg-primary p-3 text-light fw-bold">Web Developer</h3>
+                    <button onclick="tampilkanBakat1()" class="btn btn-secondary">Tampilkan/Sembunyikan Bakat</button>
+                </div>
+
+                <div id="showSkils1" class="style1">
+                    <ul>
+                        <li>Html, Css Javascripts</li>
+                        <li>bootstrap</li>
+                        <li>Git - Github</li>
+                        <li>React Js</li>
+                        <li>PHP Database</li>
+                        <li>Node Js</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="skilsShow">
+                        <h3 class="bg-primary p-3 text-light fw-bold">Ai dan ML</h3>
+                        <button onclick="tampilkanBakat2()" class="btn btn-secondary">Tampilkan/Sembunyikan
+                            Bakat</button>
+                    </div>
+
+                    <div id="showSkils2" class="style2">
+                        <ul>
+                            <li>Matematika = Statistika dan probaliti, aljabar linear, Kalkulus, Trigonometri</li>
+                            <li>Libarry Python = Numpy, Pandas, Matplotlib</li>
+                            <li>Algoritma dan Data Struktur = Simple dan Binary search, array, stack, and queue</li>
+                            <li>Scikit Learn: data processing, LinearRegresion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="skilsShow">
+                        <h3 class="bg-primary p-3 text-light fw-bold">CyberSecurity</h3>
+                        <button onclick="tampilkanBakat3()" class="btn btn-secondary">Tampilkan/Sembunyikan
+                            Bakat</button>
+                    </div>
+
+                    <div id="showSkils3" class="style3">
+                        <ul>
+                            <li>Instalasi Jaringan Computer</li>
+                            <li>Pengetahuan Fundamental Jaringan</li>
+                            <li>Arsitektur Jaringan</li>
+                            <li>Perancangan dan strategi Jaringan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skilsShow">
+                    <h3 class="bg-primary p-3 text-light fw-bold">Dasar Komputer</h3>
+                    <button onclick="tampilkanBakat4()" class="btn btn-secondary">Tampilkan/Sembunyikan Bakat</button>
+                </div>
+
+                <div id="showSkils4" class="style4">
+                    <ul>
+                        <li>Mampu Menperbaiki Komputer jika salah</li>
+                        <li>Bisa merakit komputer</li>
+                        <li>Instal OS + setting</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skilsShow">
+                    <h3 class="bg-primary p-3 text-light fw-bold">Administrasi</h3>
+                    <button onclick="tampilkanBakat5()" class="btn btn-secondary">Tampilkan/Sembunyikan Bakat</button>
+                </div>
+
+                <div id="showSkils5" class="style5">
+                    <ul>
+                        <li>Ms.Office = Word, Excel, Powerpoint</li>
+                        <li>Design = adobe XD dan Canva</li>
+                        <li>Mampu Berkomunikasi dengan baik</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body mt-5">
+        <div class="title">
+            <h3 class="bg-success p-3 text-center text-light">Project</h3>
+        </div>
+
+        <div class="wrapper p-5 bg-danger text-light">
+            <div class="title">
+                <h3 id="NameProject">Kalkulator</h3>
+            </div>
+
+            <div class="navigation">
+                <button id="kiri" class="kiri btn btn-primary"><</button> 
+                <img src="images/gambar1.png" alt="logo1" id="ImgProject" >
+                <button id="kanan" class="kanan btn btn-primary">></button>
+            </div>
+
+            <div class="desc">
+                <p id="DescProject">Ini adalah sebuah project bernama kalkulator yang sudah dimodifikasikan meskipun
+                    belum sempuran sebenarnya ada fitur yang masih tahap awal</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="title">
+            <h3 class="bg-primary p-3 text-light fw-bold text-center">Contact</h3>
+        </div>
+
+        <div class="social">
+            <ul>
+                <li><img src="images/th (1).jpeg" alt="" srcset="">faceBook:<a href="">www.facebook/Fadly non sad</a>
+                </li>
+                <li><img src="images/th (2).jpeg" alt="" srcset="">Instagram: <a
+                        href="">www.instagram/ryanaldiansyah.com</a></li>
+                <li><img src="images/th (3).jpeg" alt="" srcset="">Tiktok: <a href="">www.tiktok/alanNyariDuit.com</a>
+                </li>
+                <li><img src="images/th.jpeg" alt="" srcset="">Whatshap : <a href="">085724278655</a></li>
+            </ul>
+            <h3 class="bg-linear p-3 me-5">
+                Jika ada yang mau ditanyakan dan mau berteman silahkan klik link yang ada di kiri terima kasih semuanya
+                <div class="rateButton mt-4">
+                    <button id="like" class="btn btn-secondary">Suka 👍</button>
+                    <button id="dislike" class="btn btn-secondary">Tidak suka 👎</button>
+                </div>
+            </h3>
+        </div>
+    </div>
+
+    <div class="footer bg-dark text-light p-4 text-center">
+        <p class="fs-1">&copy; CopyRIght 2025</p>
+        <input type="color" id="warnaInput" value="white">
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

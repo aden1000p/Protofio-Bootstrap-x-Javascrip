@@ -1,0 +1,395 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-item>input{
+    border-radius: 50px;
+    width: 50px;
+    border: none;
+}
+
+.biodata, .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    border-radius: 50%;
+    width: 100%;
+    height: 900%;
+    filter: blur(20px);
+    transition: all 2s ease-in-out;
+}
+
+.image img:hover{
+    filter: none;
+}
+
+.color-gradient{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.m-left{
+    margin-left: 5%;
+}
+
+.vh-75{
+    height: 75vh;
+}
+
+#show1{
+    display: none;
+}
+
+
+#show2{
+    display: none;
+}
+
+#show3{
+    display: none;
+}
+
+
+.checklist{
+    list-style-type: none;
+}
+
+.showList{
+    list-style-type: decimal;
+}
+
+.vh-150{
+    height: 200vh;
+}
+
+.mt-10{
+    margin-top: 100px;
+}
+
+#showSkils1{
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+    background: linear-gradient(to right top, skyblue, rgb(134, 68, 196) 60%);
+    padding: 20px;
+    border-radius: 10px 0 10px 0;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    animation: FadeBlock 1s ease-in-out;
+}
+
+
+#showSkils2{
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+    background: linear-gradient(to right top, skyblue, rgb(134, 68, 196) 60%);
+    padding: 20px;
+    border-radius: 10px 0 10px 0;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    animation: FadeBlock 1s ease-in-out;
+}
+
+
+#showSkils3{
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+    background: linear-gradient(to right top, skyblue, rgb(134, 68, 196) 60%);
+    padding: 20px;
+    border-radius: 10px 0 10px 0;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    animation: FadeBlock 1s ease-in-out;
+}
+
+
+#showSkils4{
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+    background: linear-gradient(to right top, skyblue, rgb(134, 68, 196) 60%);
+    padding: 20px;
+    border-radius: 10px 0 10px 0;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    animation: FadeBlock 1s ease-in-out;
+}
+
+
+#showSkils5{
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+    background: linear-gradient(to right top, skyblue, rgb(134, 68, 196) 60%);
+    padding: 20px;
+    border-radius: 10px 0 10px 0;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    animation: FadeBlock 1s ease-in-out;
+}
+
+@keyframes FadeBlock{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+.none{
+    list-style-type: none;
+}
+
+.wrapper{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper img{
+    width: 600px;
+}
+
+.contact img{
+    width: 75px;
+}
+
+.social{
+    background-color: antiquewhite;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.social ul{
+    margin-right: 300px;
+    list-style-type: none;
+}
+
+.social li{
+    background: linear-gradient(to left top,antiquewhite, aliceblue);
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 50px;
+    transition: all .6s ease-in-out;
+}
+
+.social li:hover{
+    transform: scale(120%);
+}
+
+.social li>a{
+    text-decoration: none;
+}
+
+.social h3{
+    width: 30%;
+    color: white;
+    text-shadow: 0px 0px 10px black, 0px 10px 10px white;
+}
+
+.slide-box{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background-color: #f0f0f0;
+    padding: 0 10px;
+    border: 5px;
+}
+
+.slide-box.open{
+    max-height: 200px;
+    padding: 10px;
+}
+
+.geser{
+    background: linear-gradient(to right bottom, grey, rgb(212, 136, 136) 60%);
+    border-radius: 50px 0 50px 0;
+    width: 450px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 0px 5px 5px whitesmoke;
+    animation: LeftAnimation .6s ease-in;
+}
+
+.biodata{
+    animation: MinusAnimation 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1 alternate;
+}
+
+.navAnimation{
+    animation: AnimationTop 2s ease-in-out;
+}
+
+.lanjutkan-cerita{
+    animation: LeftAnimation 2s ease-in-out;
+}
+
+#kanan{
+    animation: FadeOut .6 ease-in-out;
+}
+
+.fadeTop {
+    animation: fadeTop .6s ease-in-out ;
+}
+
+.fadeBottom{
+    animation: fadeBottom .6s ease-in-out;
+}
+
+
+.Imageline{
+    animation: ImagesLine .6s ease-in-out;
+}
+
+.opaciti{
+    filter: opacity(0);
+}
+
+@keyframes fadeTop{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes ImagesLine{
+    0%{
+        filter: opacity(0%);
+    }
+
+    100%{
+        filter: opacity(100%);
+    }
+}
+
+@keyframes fadeBottom{
+    0%{
+        opacity: 100;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes AnimationTop{
+    0%{
+        margin-top: -100px;
+    }
+
+    100%{
+        margin-top: 0;
+    }
+}
+
+@keyframes LeftAnimation {
+    0%{
+        position: relative;
+        left: 500px;
+    }
+    
+    100%{
+        position: relative;
+        left: 0;
+    }
+}
+
+@keyframes MinusAnimation{
+    0%{
+        position: relative;
+        left: -500px;
+    }
+
+    100%{
+        position: relative;
+        left: 0;
+    }
+}
+@keyframes FadeOut{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.bg-linear{
+    border-radius: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to left bottom, aliceblue, blue);
+    box-shadow: 0px 0px 5px 5px rgb(58, 71, 82);
+}
+
+@media screen and (min-width: 900px) {
+    .nav-item input{
+        margin-left: 50vw;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 340px;
+        height: 150vh;
+    }
+
+    .biodata, .image{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image img{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 50px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .color-gradient{
+        background-image: url(../images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .style5{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .social h3{
+        color: white;
+        width: 100%;
+    }
+}
